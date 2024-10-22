@@ -7,6 +7,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+</script>
+  <script src=" https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js">
+
+      </script>
+
     <link rel="stylesheet" href="contact.css">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -56,10 +61,14 @@
       <div class="container">
       <div class="row gap-4">
       <div class="card">
-    <img
-      src="https://th.bing.com/th/id/R.353af448643146cdef31c73b2eab37f2?rik=RpOklg3A%2bjw9VA&riu=http%3a%2f%2fimages.solecollector.com%2fcomplex%2fimage%2fupload%2fzsb6flyyzppogknos9lk.jpg&ehk=KpUTW4BBfgakd1hQuROsvV3YsDfa%2fVcdkK2Ot1E2Vgg%3d&risl=&pid=ImgRaw&r=0"
-      class="card-img-top"
-    />
+  
+    <img usemap="#my-image-map" src="image-map.jpg" alt="storefront" class="card-img-top">
+    
+    <map name="my-image-map">
+      <area title="Click on the first ottoman" coords="652,714, 954,683, 1140,723, 1136,908, 824,979, 693,934 " shape="poly" href="https://www.globalindustrial.com/p/business-furniture-coventry-bun-foot-storage-ottoman-dark-gray?utm_source=msn&utm_medium=shp&utm_term=B3133609&utm_campaign=Ottomans&msclkid=aa748f9a8b6311d43710e88d860fc433&utm_content=Ottomans&adlclid=aa748f9a8b6311d43710e88d860fc433">
+     <area title="Click on the ladder" coords="759,305, 810,296, 789,669, 739,660, 746,492" shape="poly" href="https://www.ebay.com/itm/265203035090?chn=ps&var=565129081851&_trkparms=ispr%3D1&amdata=enc%3A1ZjuoFRfxR4uQ258CDkvSqg18&norover=1&mkevt=1&mkrid=711-213727-13078-0&mkcid=2&itemid=565129081851_265203035090&targetid=4580771614098644&device=c&mktype=&googleloc=&poi=&campaignid=603247547&mkgroupid=1234752552191001&rlsatarget=pla-4580771614098644&abcId=9316119&merchantid=51291&msclkid=df5a355013c919ea6ab652470c36130e"> 
+     <area title="Click on the logo on the wall" coords="285,384, 415,391, 415,422, 291,416" shape="poly" href="https://kith.com/">
+    </map>
       <div class="col border border-warning">
 <div class="card-body">
   <h5 class="card-title">Mission Statement</h5>
@@ -91,5 +100,8 @@
       </main>
 
     <footer>Created By Keith Fort</footer>
+    <script>
+      imageMapResize();
+    </script>
   </body>
 </html>
