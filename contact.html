@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="contact.css">
     <script src="utility-functions.js">
-      
+     
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -57,10 +57,18 @@
   </nav>
     
   </head>
-  <body style="background-color: lightgoldenrodyellow">
-    <main style="font-family: georgia; text-align: center">
+  
+  <body>
+    <header class="border gradient">
+      <h1>
+        Create Vision Promote Style
+      </h1>
+    </header>
+    <main>
       <h1 style="border-style: ridge; padding: 40px">Sneakers R Us</h1>
       <h2>Contact Us</h2>
+      <section>
+        <article>
       <div class="container">
       <div class="row gap-4">
       <div class="card">
@@ -72,6 +80,11 @@
      <area title="Click on the ladder" coords="759,305, 810,296, 789,669, 739,660, 746,492" shape="poly" href="https://www.ebay.com/itm/265203035090?chn=ps&var=565129081851&_trkparms=ispr%3D1&amdata=enc%3A1ZjuoFRfxR4uQ258CDkvSqg18&norover=1&mkevt=1&mkrid=711-213727-13078-0&mkcid=2&itemid=565129081851_265203035090&targetid=4580771614098644&device=c&mktype=&googleloc=&poi=&campaignid=603247547&mkgroupid=1234752552191001&rlsatarget=pla-4580771614098644&abcId=9316119&merchantid=51291&msclkid=df5a355013c919ea6ab652470c36130e"> 
      <area title="Click on the logo on the wall" coords="285,384, 415,391, 415,422, 291,416" shape="poly" href="https://kith.com/">
     </map>
+    
+  </article>
+  <article>
+
+  
       <div class="col border border-warning">
 <div class="card-body">
   <h5 class="card-title">Mission Statement</h5>
@@ -80,16 +93,26 @@
       </p>
       
       </div>
+      
+    </article>
+    
+    <section>
+
+    
       <div class="col border border-warning">
         Sneakers R Us is all about less automation and more personalization. The global marketplace for creative products seeks to offer unique items and services that buyers can’t find anywhere else. Via its mission statement, the company is speaking directly to consumers who are seeking a personal experience.
       </div>
       <div class="col border border-warning">
         Strive to be different
       </div>
+    </section>
+    
     </div>
   </div>
         </div>
       </div>
+      </section>
+      <section>
       <form onsubmit="myProcessForm(event)">
          Email: <br />
         <input /><br />
@@ -104,9 +127,10 @@
         <input required name="firstname" type="text" placeholder="first Name" /><br>
         <input required name="lastname" type="text" placeholder="last Name" /> <br>
         <input type="tel" placeholder="Telephone number input"> <br>
-        <input type="datetime-local"> Date & Time Picker
-        <button type="submit">Submit</button>
+        <input type="datetime-local"> Date & Time Picker <br>
+        <button class="btn btn-primary" id="animated-button">Submit</button>
       </form>
+    </section>
       </main>
 
     <footer>Created By Keith Fort</footer>

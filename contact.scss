@@ -1,72 +1,84 @@
-p {
-  color: rgba(4, 4, 113, 0.925);
-}
+$primaryFont: sans-serif;
+$titleFont: "IceCaps";
 
-@font-face {
-  font-family: "IceCaps";
-  src: url("IceCaps.ttf");
-}
-ul {
-  font-family: sans-serif;
+@mixin oliveText{
   color: darkolivegreen;
 }
 
-h1 {
-  font-family: "IceCaps";
+p{
+  color: rgba(4, 4, 113, 0.925);
 }
 
-body {
+@font-face{
+  font-family: "IceCaps";
+  src: url("IceCaps.ttf");
+}
+ul{
+  font-family:$primaryFont;
+  @include oliveText;
+}
+
+h1{
+  font-family: $titleFont;
+}
+
+body{
   background-color: lightgoldenrodyellow;
 }
 
-main {
-  font-family: Georgia, "Times New Roman", Times, serif;
+main{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
-
 footer {
   border-style: dashed !important;
-  font-family: "IceCaps";
+  font-family: $titleFont;
 }
-
 #payment {
   color: brown;
+  
 }
 
 #payment2 {
   color: #003366;
 }
 
-#payment3 {
+#payment3{
   color: red;
 }
 
-#payment4 {
+#payment4{
   color: olive;
+  
 }
 
-#payment5 {
+#payment5{
   color: rgb(0, 204, 102);
 }
 
-#payment6 {
+#payment6{
   color: #ff9900;
 }
 
-.border {
+.border{
   border-style: dashed;
-  color: darkred;
+  color:darkred;
 }
 
-.gradient {
+.gradient{
   background-image: linear-gradient(to bottom right, yellow, grey, white);
 }
-
-#animated-button {
+@mixin animation{
   transform: scale(1) rotate(0deg);
   transition: transform 1s;
-}
-#animated-button:hover {
-  transform: scale(2) rotate(15deg);
-  transition: transform 2s;
+
+  &:hover{
+      transform: scale(2) rotate(15deg);
+      transition: transform 2s;
+  }
+  }
+
+
+#animated-button{
+@include animation;
 }
