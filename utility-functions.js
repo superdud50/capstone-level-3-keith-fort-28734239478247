@@ -21,7 +21,7 @@ event.preventDefault();
 const form = event.target;
 const firstNameInput = form[0];
 const value = firstNameInput.value;
-output(`Your infomation has been processed, your email is ${value}.<br>`)
+output(`You have successfully joined our mailing list, your email is ${value}.<br>`)
 }
 
 function myAppointmentForm(event){
@@ -42,3 +42,44 @@ output(`Hello ${value1 +" "+ value2 }.We have received your order, your conact h
 function output(text){
   document.write(text)
 }
+function display(message) {
+  document.write(message);
+};
+
+function greeting () {
+  display("Hello and welcome to Sneakers R US. Let us know your thoughts, we are happy to help");
+}
+function delayedGreeting() {
+  setTimeout(greeting, 5000);
+}
+function asynchronous() {
+  setTimeout(greeting, 5000);
+  display("Loading...");
+}
+function handleSubmit(event) {
+  const inputs = event.target;
+  event.preventDefault()
+  const emailInput = inputs[0];
+  const email = emailInput.value;
+  display("Registering email for " + email + "...");
+  const promise = new Promise(getServerResponse);
+  promise.then(parseResponse);
+}
+
+function getServerResponse(resolve){
+  setTimeout(activateResolve, 5000);
+  function activateResolve(){
+      const response = {
+          message:"You have now been entered into our sweepstakes! Good Luck on the contest, winners will be contacted once the contest has closed "
+      };
+      const resolveValue = JSON.stringify(response);
+      resolve(resolveValue);
+  }
+}
+
+function parseResponse(resolveValue){
+  const response = JSON.parse(resolveValue);
+  const message = response.message;
+  display(message);
+}
+

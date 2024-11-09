@@ -20,6 +20,7 @@
     
         document.write(myMessage);
   }
+  
     function ask(){
       userName = prompt("Enter your name. ")
    return "Welcome to Sneakers R Us " + userName;
@@ -31,10 +32,16 @@
   display2("The data type is ");
   display2(typeof name);
 
-
+  
       
     </script>
     
+    <style>
+          h2{
+            font-family: fantasy;
+          }
+        </style>
+      
     <title>Sneakers R Us</title>
     <a target="_blank" href="https://www.youtube.com/watch?v=03AmLmY8E2Y">
     <img
@@ -42,27 +49,29 @@
       src="https://cdn.glitch.global/5d321880-ae20-4339-b1e1-b400722503c9/15cd21f6-8e4d-41c1-8d05-2bda43f865c7.image.png?v=1722101783224"
     />
     </a>
-     <nav class="nav nav-pills">
-    <a class= "nav-link active" href="index.html">Home</a>
-    <a class= "nav-link" href="about.html">About</a>
-    <a class= "nav-link" href="contact.html">Contact</a>
-  </nav>
-
     <hr />
   </head>
-  <body class = "container border">
+  <body>
+    <header class ="container">
+      <nav class="nav nav-pills">
+        <a class= "nav-link active" href="index.html">Home</a>
+        <a class= "nav-link" href="about.html">About</a>
+        <a class= "nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
   <div id="outputTag">
     </div>
      
   </body>
   
-  <body class="container">
-    <main>
-      
-      <h1 style="border-style: ridge; padding: 40px">
+  <main>
+      <h1 style="border-style: ridge; padding: 40px; font-size: 60px">
         Sneakers R Us
         <hr />
       </h1>
+      <section>
+<article>
+
 
       <h2 id="footwear">Footwear</h2>
       <p>
@@ -80,6 +89,9 @@
         dignissim purus vel facilisis porta. Mauris elementum urna mauris, eget
         maximus metus sollicitudin vitae. Donec iaculis arcu at lacinia posuere.
       </p>
+    </article>
+    <article>
+
       <h2 id="creative">Creative Process</h2>
       <p>
         Fusce a arcu vitae mauris fringilla egestas eget nec felis. Sed rhoncus
@@ -97,6 +109,10 @@
         euismod cursus sollicitudin. Phasellus nec leo finibus nibh imperdiet
         ornare.
       </p>
+    </article>
+    <article>
+
+    
       <h2 id="shipping">Shipping Information</h2>
       <p>
         Vestibulum nec est ex. Sed condimentum turpis vitae felis laoreet
@@ -108,9 +124,14 @@
         Aenean varius ullamcorper eros, vitae fringilla neque euismod eget.
         Nullam ut condimentum ante. In ultrices neque id elit bibendum, nec
         aliquet diam feugiat.
-      </p> <h3>
+      </p>
+    </article> 
+    </section>
+     
+        <section>
+          <h2>
       Trending Topics
-      </h3>
+      </h2>
       <div class="container text-center">
   <div class="row align-items-start">
     <div class="col">
@@ -144,14 +165,15 @@
     </div>
   </div>
 </div>
+</section>
    
-    </main>
-  <body class="container">
-    <main id="mainTag">
+    
+  <section class="container">
+    <article id="mainTag">
       
       <h3>Note!</h3>
       <script>
-        debugger;
+        
         const myContent = "Give us a shout out on social media!";
         let myColumnString = createColumn(myContent);
         myColumnString += createColumn ("We want to feature you on ours!")
@@ -162,11 +184,15 @@
         const myContainerString = createContainer(myRowString);
         mainTag.innerHTML += myContainerString;
       </script>
-      
-        
-      
-    </main>
-  </body>
+    </article>
+    </section>
+    <section>
+      <button id="animated-button" class="bg-success" onclick="asynchronous()">Welcome Bot</button>
+
+      </section>
+
+  </main>  
+
     <hr />
     <footer>
       Sitemap:<br />
