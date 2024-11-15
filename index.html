@@ -7,6 +7,9 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="contact.css">
+  
+  
   <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -14,7 +17,8 @@
           
     ></script>
        <script src= "utility-functions.js"></script>
-    <link rel="stylesheet" href="contact.css">
+       <script src="api.js"></script>
+    
     <script>
       function display2(myMessage){
     
@@ -32,12 +36,6 @@
   display2("The data type is ");
   display2(typeof name);
     </script>
-
-    <script>
-      
-      const contents = ["Notes,"]
-    </script>
-
   
     <style>
           h2{
@@ -63,6 +61,7 @@
       </nav>
     </header>
   <div id="outputTag">
+
     </div>
      
   </body>
@@ -73,6 +72,18 @@
         <hr />
       </h1>
       <section>
+       
+        <article>
+          <h3>
+        
+            Welcome to Sneakers R Us! Here on this website you will be able to keep up with sneaker news and sneaker releases.
+            Feel free to look through our catalog where you will be able to order products from our collection. This will include payment methods,
+            release dates and a sku numbers located here on the about page. The Home page features our thought process and our outlook
+            on the recent releases, along with trending topics. On our contact page you will find a form where you can schedule an appointment with us!
+            Enjoy.
+      
+          </h3>
+        </article>
 <article>
 
 
@@ -130,7 +141,15 @@
       </p>
     </article> 
     </section>
-     
+    <section>
+      <div class="container">
+      <p>Are you a trivia fan? Test your skill!</p>
+      <button onclick= "handleClick(event)">Trivia</button>
+        <div id="outputTag2"></div>
+      </div>
+      <br>
+
+    </section>
         <section>
           <h2>
       Trending Topics
@@ -169,12 +188,11 @@
   </div>
 </div>
 </section>
-   
-    
+   <br>
   <section class="container">
     <article id="mainTag">
       
-      <h3>Note!</h3>
+      <h3>Welcome Center</h3>
       <script>
         
         const myContent = "Give us a shout out on social media!";
@@ -186,12 +204,11 @@
         const myContainerString = createContainer(myRowString);
         mainTag.innerHTML += myContainerString;
       </script>
-    </article>
-    </section>
-    <section>
       <button id="animated-button" class="bg-success" onclick="asynchronous()">Welcome Bot</button>
 
-      </section>
+    </article>
+    </section>
+   
 
   </main>  
 

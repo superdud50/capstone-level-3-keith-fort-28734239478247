@@ -83,3 +83,14 @@ function parseResponse(resolveValue){
   display(message);
 }
 
+function display(message) {
+  document.write(message)
+}
+
+function output(message) {
+ window.outputTag.innerHTML += message;
+}
+
+function output2(message) {
+  window.outputTag2.innerHTML += message;
+ }
