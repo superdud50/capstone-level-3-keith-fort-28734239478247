@@ -1,6 +1,7 @@
 $primaryFont: sans-serif;
 $titleFont: "IceCaps";
 $lightBlue: rgba(70, 70, 255, 0.927);
+$greenText: rgb(10, 126, 10);
 
 @mixin oliveText{
   color: darkolivegreen;
@@ -13,6 +14,25 @@ $lightBlue: rgba(70, 70, 255, 0.927);
 ul{
   font-family:$primaryFont;
   @include oliveText;
+}
+
+@mixin boxShadow{
+  box-shadow: 5px 5px grey;
+}
+
+@mixin textShadow{
+  text-shadow: 1px .5px;
+}
+#mixin-example{
+  @include boxShadow;
+  @include textShadow;
+}
+
+h2{
+  i {
+    color: $lightBlue;
+
+  }
 }
 
 h1{
@@ -29,7 +49,7 @@ main{
 }
 footer {
   border-style: dashed !important;
-  font-family: $titleFont;
+  font-family: $primaryFont ;
 }
 #payments {
   color: blue;
@@ -59,7 +79,7 @@ footer {
 
 .border{
   border-style: dashed;
-  color:darkred;
+  color: $greenText;
 }
 
 .gradient{

@@ -1,7 +1,19 @@
-
 @font-face {
   font-family: "IceCaps";
   src: url("IceCaps.ttf");
+}
+ul {
+  font-family: sans-serif;
+  color: darkolivegreen;
+}
+
+#mixin-example {
+  box-shadow: 5px 5px grey;
+  text-shadow: 1px 0.5px;
+}
+
+h2 i {
+  color: rgba(70, 70, 255, 0.927);
 }
 
 h1 {
@@ -17,19 +29,13 @@ main {
   text-align: center;
 }
 
-ul {
-  font-family: sans-serif;
-  color: darkolivegreen;
-}
-
-
 footer {
   border-style: dashed !important;
-
+  font-family: sans-serif;
 }
 
 #payments {
-  color: green;
+  color: blue;
 }
 
 #payment2 {
@@ -52,6 +58,10 @@ footer {
   color: #ff9900;
 }
 
+.border {
+  border-style: dashed;
+  color: rgb(10, 126, 10);
+}
 
 .gradient {
   background-image: linear-gradient(to bottom right, yellow, grey, white);

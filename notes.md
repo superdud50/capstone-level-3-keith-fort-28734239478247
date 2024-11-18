@@ -74,11 +74,29 @@ Please add the proper validations to this form.
 SASS
 -
     Properly use opacity
+    Nesting Syntax
+    Text Shadow
+    box shadow
+    17/21
 
 - Check for bugs
 
 Server Simulation
 -
+    Task is completed on the about.html and index.html page 22/22
+- The greeting bot has the delayed response function "fake process form"
+  - when button is pressed the function starts as "loading, wait for 5 seconds and the bot will greet you"
+- The Handle submit uses the sweepstakes function "promise function"
+  - when the button is pressed you have enter an email to enter into a sweepstakes
+  - once entered it will "register your email and send back the entered email
+  - wait 5 seconds and the server will send a message saying you have entered into the contest
+  - create the function myPromise, move the promise into it, return the promise
+  - Use then to access the promise after the server response
+    The then function runs the callback function when the promise is resolved (fulfilled).
+    The callback function has access to the resolve value.
+
+    - The feedback should be on the webpage close to the submit button.      
 
 Rest API
 -
+  - Explain how the text, then, parse, and fetch works 

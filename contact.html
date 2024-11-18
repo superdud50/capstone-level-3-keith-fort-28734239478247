@@ -48,6 +48,7 @@
         h2{
           font-style: italic;
           font-weight: 100;
+          color: blueviolet;
         }
 
       </style>
@@ -115,6 +116,7 @@
       <div class="col border border-warning">
         Strive to be different
       </div>
+    
     </section>
     
     </div>
@@ -123,11 +125,13 @@
       </div>
       </section>
       <section>
+        <br>
       <form onsubmit="myProcessForm(event)">
          Join our Mailing List.<br> Email: <br />
         <input /><br />
         Messent sent from: <br />
         <textarea></textarea>
+        <div id="formFeedback"></div>
         
         <p>
           <button>Submit</button>
@@ -139,10 +143,11 @@
         
         <input required name="firstname" type="text" placeholder="first Name" /><br>
         <input required name="lastname" type="text" placeholder="last Name" /> <br>
-        <input type="tel" placeholder="Telephone number input"> <br>
+        <input required type="tel" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
         <input type="datetime-local"> Date & Time Picker <br>
         <button class="btn btn-primary" id="animated-button">Submit</button>
       </form>
+      <div id="formFeedback2"></div>
     </section>
       </main>
 
