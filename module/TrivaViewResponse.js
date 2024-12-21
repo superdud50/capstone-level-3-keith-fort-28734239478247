@@ -1,5 +1,4 @@
 import { output2Trivia } from "../util/Trivia.js";
-import { TriviaParseResponse } from "./TriviaParseResponse.js";
 
 export function TriviaViewResponse(resolveValue){
     debugger

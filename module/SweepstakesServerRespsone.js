@@ -1,4 +1,5 @@
  export function SweepstakesServerResponse(resolve){
+    
     setTimeout(activateResolve, 5000);
     function activateResolve(){
         const response = {

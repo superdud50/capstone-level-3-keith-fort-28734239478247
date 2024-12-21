@@ -1,4 +1,4 @@
-import { Row } from "./Row.js";
+import { Row } from "../util/Row.js";
 
 export class WelcomeCenter{
     openingTag = "<div class='row'>";

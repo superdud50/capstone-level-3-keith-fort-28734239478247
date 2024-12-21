@@ -1,4 +1,4 @@
-import { output4mailingList } from "../util/MailingList.js";
+import { output4mailingList } from "../module/MailingList.js";
 
  export function MailingList(event){
   

@@ -1,4 +1,4 @@
-import { output5Appointment } from "../util/Appointment.js"
+import { output5Appointment } from "../module/Appointment.js"
 
 export function AppointmentForm(event){
   
